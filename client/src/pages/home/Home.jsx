@@ -1,22 +1,22 @@
 import React from "react";
 import "./Home.scss";
 import Featured from "../../components/featured/Featured";
-// import TrustedBy from "../../components/trustedBy/TrustedBy";
-// import Slide from "../../components/slide/Slide";
-// import CatCard from "../../components/catCard/CatCard";
-// import ProjectCard from "../../components/projectCard/ProjectCard";
-// import { cards, projects } from "../../data";
+import TrustedBy from "../../components/trustedBy/TrustedBy";
+import Slide from "../../components/slide/Slide";
+import CatCard from "../../components/catCard/CatCard";
+import ProjectCard from "../../components/projectCard/ProjectCard";
+import { cards, projects } from "../../data";
 
 function Home() {
   return (
     <div className="home">
       <Featured />
-      {/* <TrustedBy />
+      <TrustedBy />
       <Slide slidesToShow={5} arrowsScroll={5}>
         {cards.map((card) => (
           <CatCard key={card.id} card={card} />
         ))}
-      </Slide> */}
+      </Slide>
       <div className="features">
         <div className="container">
           <div className="item">
@@ -184,11 +184,11 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <Slide slidesToShow={4} arrowsScroll={4}>
+      <Slide slidesToShow={4} arrowsScroll={4}>
         {projects.map((card) => (
           <ProjectCard key={card.id} card={card} />
         ))}
-      </Slide> */}
+      </Slide>
     </div>
   );
 }
